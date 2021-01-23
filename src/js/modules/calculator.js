@@ -137,7 +137,7 @@ class Calculator {
         //AJAX запрос калькулятор
 
         let xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://https://gipsolit-site.herokuapp.com/calc');
+        xhr.open('POST', 'https://gipsolit-site.herokuapp.com/calc');
 
         xhr.setRequestHeader('Content-type', 'application/json; charset = utf-8');
         //Проверка сформированной даты
@@ -160,10 +160,11 @@ class Calculator {
 
                 //Ответ от сервера
                 let obj = JSON.parse(xhr.response);
+               
 
 
                 // getResultPopup('popup-result', obj);
-                new Popup().showPopup('#popup-result');
+                //new Popup().showPopup('#popup-result');
 
                 alert(`${obj.place}, ${obj.roller}, ${obj.result.min} // ${obj.result.all}  `);
 
