@@ -23,5 +23,5 @@
  Бесплатный Хостинг MySql [Remotemysql.com](http://remotemysql.com),
  Сайт оптимизирован по рекомендациям ресурса Google Page Speed [Ссылка](https://developers.google.com/speed/pagespeed/insights/?hl=RU)
  
- [Скриншот проекта](/gipsolit.png).
+ [Скриншот проекта](template/gipsolit.png).
 
