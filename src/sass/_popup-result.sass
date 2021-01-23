@@ -1,0 +1,50 @@
+/*POPUP-RESULT*/
+.popup
+  &-result
+    visibility: hidden
+    &-content
+      display: flex
+      justify-content: space-between
+      padding: 0
+      max-width: 700px
+      background: linear-gradient(to right, $calculator-bg 50%, #ffffff 50%)
+    &-block
+
+      font-size: 18px
+      background: transparent
+      box-shadow: none
+      min-height: 450px
+      padding: 30px 80px
+      &__title
+        font-size: 18px
+        margin-bottom: 30px
+      &__descr
+        margin-bottom: 30px
+      &__cost
+        display: block
+        margin-bottom: 30px
+        font-size: 20px
+        font-weight: 700
+        strong
+          font-size: 30px
+      &__list
+        margin-bottom: 20px
+        min-height: 130px
+        font-size: 16px
+        line-height: 1.6
+        list-style: none
+      &__item
+        &::before
+          display: inline-block
+          content: ''
+          width: 14px
+          height: 14px
+          margin-right: 10px
+          background: url('../img/check.svg') center no-repeat
+          background-size: 100%
+          vertical-align: middle
+
+
+
+
+/*END POPUP-RESULT*/

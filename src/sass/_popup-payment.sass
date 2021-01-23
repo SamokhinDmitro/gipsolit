@@ -1,0 +1,68 @@
+/*POPUP-PAYMENT*/
+.popup
+  &-payment
+    visibility: hidden
+    &-content
+      display: flex
+      justify-content: space-between
+      padding: 0
+      max-width: 700px
+      background: linear-gradient(to right, $calculator-bg 50%, #ffffff 50%)
+      &__title
+        font-weight: 400
+        margin-bottom: 40px
+  /*popup-caller*/
+  &-caller
+    padding: 30px 50px
+    width: 100%
+    max-width: 350px
+
+  /*end popup-caller*/
+
+  /*popup-calculator*/
+  &-calculator
+    padding: 30px 50px
+    width: 100%
+    max-width: 350px
+
+    &__img
+      display: flex
+      align-items: center
+      min-height: 50px
+      margin-bottom: 25px
+    &__tabs
+      display: none
+      margin-bottom: 20px
+      flex-direction: column
+      justify-content: space-around
+      min-height: 335px
+      &_active
+        display: flex
+    &__controls
+      display: flex
+      justify-content: space-between
+    &__step
+      display: block
+      margin-right: 10px
+      cursor: pointer
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #c4c4c4
+      &:last-child
+        margin-right: 0
+      &_active
+        background: $title-color-sub
+    &__btn
+      margin-bottom: 20px
+      &_active
+        color: $text-color-light
+        background-color: $btn-color
+        &:hover
+          cursor: pointer
+          background-color: darken($btn-color, 5)
+          transition: all .2s ease
+
+  /*end popup-calculator*/
+
+/*END POPUP-PAYMENT*/

@@ -1,0 +1,118 @@
+/*FEEDBACK*/
+.feedback
+  position: relative
+  background: url('../img/feedback/feedback-bg.jpg') center 0 repeat
+  background-size: cover
+  color: $text-color
+
+
+  &-hand
+    position: absolute
+    max-width: 280px
+    bottom: 0
+    left: 0
+
+  /*Slider*/
+  &-slider
+    position: relative
+    padding: 50px 60px
+    margin-bottom: 60px
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.11)
+    background-color: #ffffff
+    z-index: 1
+  &-btn
+    position: absolute
+    width: 40px
+    height: 40px
+    top: 50%
+    transform: translateY(-50%)
+    border: none
+    background: $icon-color center 0 no-repeat
+    z-index: 99
+    &__img
+       width: 30%
+    &__prev
+      left: -40px
+    &__next
+      right: -40px
+  /*End Slider*/
+
+  &-text
+    margin-bottom: 45px
+    &__descr
+      font-size: 16px
+      line-height: 2
+
+  &-card
+    display: flex
+    margin-bottom: 30px
+    &__img
+      min-width: 50px
+      min-height: 50px
+      margin-right: 20px
+      flex-shrink: 0
+      border-radius: 50%
+
+    &__title
+      display: block
+      font-size: 14px
+    &__author
+      font-size: 16px
+      font-weight: 700
+      
+  &-comment
+    position: relative
+    padding: 20px
+    font-size: 15px
+    line-height: 1.2
+    font-style: italic
+    border: 2px solid $icon-color
+    &::after
+      display: block
+      content: ''
+      position: absolute
+      top: -20px
+      left: 40px
+      width: 10px
+      height: 10px
+      background-color: transparent
+      border: 10px solid transparent
+      border-left: 10px solid $icon-color
+      border-bottom: 10px solid $icon-color
+      z-index: 1
+      
+    &::before
+      display: block
+      position: absolute
+      content: ''
+      top: -14px
+      left: 43px
+      width: 10px
+      height: 10px
+      border: 7px solid transparent
+      border-left: 8px solid #ffffff
+      border-bottom: 8px solid #ffffff
+      z-index: 2
+
+  /*Form*/
+  &-content
+    padding: 50px 0
+    background: #ffffff
+    text-align: center
+    &__title
+      margin-bottom: 43px
+      font-size: 22px
+      font-weight: 700
+  &-form
+    flex-direction: column
+    &__wrap
+      display: flex
+    &__group
+      &:first-child
+        margin-right: 30px
+    &__input
+      margin-bottom: 30px
+
+
+/*END FEEDBACK*/
+

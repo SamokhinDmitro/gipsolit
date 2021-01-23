@@ -1,0 +1,35 @@
+/*CONTACTS*/
+.contacts
+  color: $text-color-dark
+  background: $border-input url('../img/contacts/contacts-bg.jpg') center left 68% no-repeat
+  background-size: cover
+  &-title
+    margin-bottom: 70px
+    font-size: 36px
+  &-form
+    &__button
+      margin-bottom: 0
+  &-block
+    margin-bottom: 40px
+    font-size: 18px
+    &:last-child
+      margin-bottom: 0
+    &__address
+      margin-bottom: 25px
+    &__title
+      display: block
+    &__link
+      color: $text-color-dark
+      border-bottom: 1px dotted $text-color-dark
+      &:hover
+        color: lighten($text-color-dark, 10%)
+        border-color: lighten($text-color-dark, 10%)
+    &__phone
+      border: none
+
+#map
+  margin-bottom: 36px
+  width: 100%
+  height: 200px
+
+/*END CONTACTS*/

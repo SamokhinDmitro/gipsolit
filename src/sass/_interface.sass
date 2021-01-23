@@ -1,0 +1,260 @@
+/*INTERFACE*/
+section, footer
+  padding: 80px 0
+
+strong
+  font-weight: 700
+
+
+a
+  &:hover
+    text-decoration: none
+    color: $text-color-light
+
+.section
+  &-title
+    margin-bottom: 40px
+    text-align: center
+    font-size: 36px
+    font-weight: 700
+    color: $title-color
+  &-subtitle
+    text-align: center
+    font-size: 16px
+    color: $text-color
+  &-light
+    color: $text-color-light
+  &-sub
+    color: $title-color-sub
+
+.button
+  display: inline-block
+  padding: 20px 30px
+  font-size: 16px
+  color: $text-color-light
+  text-transform: uppercase
+  border: none
+  border-radius: 8px
+  background-color: $btn-color
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04)
+
+  &:hover
+    cursor: pointer
+    background-color: darken($btn-color, 5)
+    transition: all .2s ease
+  &_small
+    padding: 15px 30px
+    font-size: 12px
+    &:hover
+      text-decoration: none
+      color: $text-color-light
+      transition: all .2s ease
+  &_xs
+    font-size: 14px
+  &_darken
+    padding: 15px 70px
+    font-size: 14px
+    color: #4b4b4b
+    background: #e0e0e0
+    border: 1px solid #dadada
+    &:hover
+      background: darken(#e0e0e0, 5%)
+  &_up
+    position: fixed
+    display: none
+    right: 3%
+    bottom: 15px
+    padding: 10px
+    text-align: center
+
+
+
+/*FORM*/
+.form
+  display: flex
+  width: 100%
+  text-align: center
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &-text
+    padding: 50px 47px
+    background: #ffffff
+    text-align: center
+    margin-bottom: 36px
+    &__title
+      margin-bottom: 40px
+      font-weight: 400
+      font-size: 18px
+      strong
+        font-size: 20px
+  &__wrap
+    width: 100%
+    display: flex
+    justify-content: space-between
+  &__group
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__label
+    position: relative
+    display: block
+    color: $label-color
+    font-size: 13px
+    padding: 0 7px
+    margin: 0
+    transform: translateY(50%)
+    background: #ffffff
+    z-index: 5
+    &-check
+      transform: translateY(0%)
+      background: transparent
+      &::before
+        width: 20px
+        height: 20px
+        display: block
+        margin: 0 auto
+        margin-bottom: 22px
+        left: 50%
+        content: ''
+        background: $text-color-light
+        border: 1px solid $check-border
+  &__button
+    margin-bottom: 15px
+
+  &__input, &__textarea
+    position: relative
+    display: block
+    min-width: 256px
+    margin-bottom: 25px
+    width: 100%
+    padding: 15px
+    font-family: 'Proxima Nova', sans-serif
+    font-weight: 400
+    font-size: 16px
+    vertical-align: center
+    color: $text-color-dark
+    border: 1px solid $border-input
+    border-radius: 5px
+    z-index: 2
+    &::placeholder
+      opacity: 0.7
+
+  &__checkbox
+    display: none
+    &:checked + .form__label-check::before
+      content: ''
+      background:  #ffffff url("../img/check.svg") center no-repeat
+      background-size: 80%
+  &__small
+    display: block
+    color: $label-color
+    font-size: 13px
+/*END FORM*/
+
+.info
+  position: absolute
+  width: 100%
+  display: block
+  bottom: 0
+  left: 0
+  font-size: 12px
+  z-index: 10
+
+
+/*SLIDER*/
+.slick
+  &-slide
+    height: 100%
+  &-active
+    outline: none
+.slider
+  &-btn
+    position: absolute
+    width: 13px
+    height: 20px
+    border: none
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 99
+    &__prev
+      left: 10%
+      background: url('../img/prev.svg') center 0 no-repeat
+      background-size: cover
+    &__next
+      right: 10%
+      background: url('../img/next.svg') center 0 no-repeat
+      background-size: cover
+
+
+.slick-dots li.slick-active button
+  &::before
+    color: green!important
+
+/*END SLIDER*/
+
+/*Popup*/
+.popup
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0, 0.5)
+  z-index: 100
+  &-content
+    position: fixed
+    display: block
+    text-align: center
+    padding: 30px 50px
+    width: 100%
+    background: #ffffff
+    top: 5%
+    left: 50%
+    transform: translateX(-50%)
+    &__close
+      position: absolute
+      top: -20px
+      right: -25px
+
+      width: 20px
+      color: $text-color-light
+      text-align: center
+      font-size: 30px
+      border: none
+      padding: 0
+      background: transparent
+
+    &__title
+      font-size: 18px
+    &__descr
+      margin-bottom: 30px
+      font-size: 18px
+    &__table
+      font-size: 15px
+      border-collapse: collapse
+      text-align: left
+    &__th
+      font-weight: 700
+    &__th, &__td
+      padding: 20px
+    &__th, &__td, &__tr
+      border: 1px solid $table-color
+
+img
+  opacity: 1
+  transition: opacity 0.3s
+
+
+img[data-src]
+  opacity: 0
+
+
+
+
+
+
+
