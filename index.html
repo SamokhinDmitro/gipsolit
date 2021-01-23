@@ -1,0 +1,1592 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Гипсолит</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/ico">
+
+    <style>
+        @font-face{font-family:'Proxima Nova';src:url(fonts/ProximaNova-Regular.eot);src:local("fonts/Proxima Nova Regular"),local("ProximaNova-Regular"),url(fonts/ProximaNova-Regular.eot?#iefix) format("embedded-opentype"),url(fonts/ProximaNova-Regular.woff) format("woff"),url(fonts/ProximaNova-Regular.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Proxima Nova';src:url(fonts/ProximaNova-Bold.eot);src:local("fonts/Proxima Nova Bold"),local("ProximaNova-Bold"),url(fonts/ProximaNova-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/ProximaNova-Bold.woff) format("woff"),url(fonts/ProximaNova-Bold.ttf) format("truetype");font-weight:700;font-style:normal;font-display:swap}*{box-sizing:border-box}body{font-family:'Proxima Nova',sans-serif;font-weight:400;font-size:14px;color:#1a1820;background:#fff;position:relative}body{margin:0}p{margin:0}h1,h2,h3,h4,h5{margin:0;font-weight:700}a{text-decoration:none}img{max-width:100%;height:auto}button:focus,input:focus,textarea:focus{outline:0}ul{margin:0;padding:0}footer,section{padding:80px 0}strong{font-weight:700}a:hover{text-decoration:none;color:#ffff}.section-title{margin-bottom:40px;text-align:center;font-size:36px;font-weight:700;color:#1a1820}.section-subtitle{text-align:center;font-size:16px;color:#1a1820}.section-light{color:#ffff}.section-sub{color:#358015}.button{display:inline-block;padding:20px 30px;font-size:16px;color:#ffff;text-transform:uppercase;border:none;border-radius:8px;background-color:#ffb504;box-shadow:0 8px 13px rgba(0,0,0,.04)}.button:hover{cursor:pointer;background-color:#eaa500;transition:all .2s ease}.button_small{padding:15px 30px;font-size:12px}.button_small:hover{text-decoration:none;color:#ffff;transition:all .2s ease}.button_xs{font-size:14px}.button_darken{padding:15px 70px;font-size:14px;color:#4b4b4b;background:#e0e0e0;border:1px solid #dadada}.button_darken:hover{background:#d3d3d3}.button_up{position:fixed;display:none;right:3%;bottom:15px;padding:10px;text-align:center}.form{display:flex;width:100%;text-align:center;flex-direction:column;justify-content:center;align-items:center}.form-text{padding:50px 47px;background:#fff;text-align:center;margin-bottom:36px}.form-text__title{margin-bottom:40px;font-weight:400;font-size:18px}.form-text__title strong{font-size:20px}.form__wrap{width:100%;display:flex;justify-content:space-between}.form__group{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center}.form__label{position:relative;display:block;color:#565656;font-size:13px;padding:0 7px;margin:0;transform:translateY(50%);background:#fff;z-index:5}.form__label-check{transform:translateY(0);background:0 0}.form__label-check::before{width:20px;height:20px;display:block;margin:0 auto;margin-bottom:22px;left:50%;content:'';background:#ffff;border:1px solid #d0d0d0}.form__button{margin-bottom:15px}.form__input,.form__textarea{position:relative;display:block;min-width:256px;margin-bottom:25px;width:100%;padding:15px;font-family:'Proxima Nova',sans-serif;font-weight:400;font-size:16px;vertical-align:center;color:#292929;border:1px solid #ddd;border-radius:5px;z-index:2}.form__input::-webkit-input-placeholder,.form__textarea::-webkit-input-placeholder{opacity:.7}.form__input::-moz-placeholder,.form__textarea::-moz-placeholder{opacity:.7}.form__input:-ms-input-placeholder,.form__textarea:-ms-input-placeholder{opacity:.7}.form__input::-ms-input-placeholder,.form__textarea::-ms-input-placeholder{opacity:.7}.form__input::placeholder,.form__textarea::placeholder{opacity:.7}.form__checkbox{display:none}.form__checkbox:checked+.form__label-check::before{content:'';background:#fff url(../img/check.svg) center no-repeat;background-size:80%}.form__small{display:block;color:#565656;font-size:13px}img{opacity:1;transition:opacity .3s}img[data-src]{opacity:0}.navigation{padding:0}.navigation__active{position:fixed;top:0;left:0;width:100%;height:100%;z-index:50;background:rgba(0,0,0,.2)}.navigation-btn{display:none;position:fixed;top:10px;left:10px;width:30px;height:30px;background:#f4f4f4;border-radius:5px;color:#292929;transition:all .5s ease;z-index:999}.navigation-btn:hover{box-shadow:1px 1px 10px rgba(0,0,0,.4)}.navigation-btn__line,.navigation-btn__line::after,.navigation-btn__line::before{display:block;position:absolute;top:50%;left:50%;transform:translateX(-50%);width:20px;height:2px;background:#292929}.navigation-btn__line::before{content:'';margin-top:-5px}.navigation-btn__line::after{content:'';margin-top:3px}.navigation-btn__active{position:absolute;border-radius:50%;top:5px;left:auto;right:-30px}.navigation-btn__active .navigation-btn__line{background:0 0}.navigation-btn__active .navigation-btn__line::before{left:0;top:0;transform:rotate(-135deg);margin-top:0}.navigation-btn__active .navigation-btn__line::after{left:0;top:0;transform:rotate(135deg);margin-top:0}.navigation-block{display:block;position:fixed;width:100%;min-height:40px;top:0;left:0;z-index:99;transition:all .5s ease;background:#565656}.navigation-block__list{display:flex;flex-direction:row;padding:0;margin:0;justify-content:center;align-items:center;list-style:none}.navigation-block__item{text-align:center;border-left:1px dashed #358015}.navigation-block__item:first-child{border-left:none}.navigation-block__link{display:block;width:100%;padding:10px 15px;font-size:12px;text-transform:uppercase;color:#fff}.navigation-block__link:hover{color:#49bf15}.header{padding-top:60px;padding-bottom:40px;background:#fff;color:#292929;background:url(img/header/heade-bg.jpg) center 0 no-repeat;background-size:cover}.header-logo{width:206px;height:70px}.header-phone{display:block;font-size:20px;font-weight:700;color:#292929;text-align:right}.header-phone:hover{text-decoration:none;color:#696969}.header-contacts{display:flex}.header-content{margin-top:104px}.header-content__title{margin-bottom:50px;font-size:40px;font-weight:700;line-height:1.48;text-transform:uppercase}.header-content__subtitle{display:block;font-size:24px;margin-bottom:60px}.header-content__descr{display:inline-block;margin-bottom:37px;color:#ffff;padding:25px 30px;background:#70c849;text-align:center}.header-content__info{display:block;font-size:18px}.header-content__price{display:block;font-size:24px}.header-content__price strong{font-size:30px}.header-content__payment{display:block;font-size:22px;font-weight:700;text-transform:uppercase}.header-content__schedule{text-align:center;color:#565656;font-size:13px}@media (max-width:992px){footer,section{padding:60px 0}.section-title{font-size:30px}.button_darken{padding:10px 50px}.button_up{padding:10px}.form__input{max-width:350px;margin-bottom:20px}.form__input,.form__textarea{padding:10px}.form-text__title{margin-bottom:20px}.navigation-btn{display:block}.navigation-block{height:100vh!important;width:60vw;left:-60vw}.navigation-block__list{flex-direction:column;align-items:center;justify-content:space-around}.navigation-block__item{width:100%;border-left:none}.navigation-block__link{width:100%;letter-spacing:1.5px;transition:all .5s ease}.navigation-block__link:hover{cursor:pointer;background:rgba(255,255,255,.2)}.navigation-block__active{left:0}.header{padding-top:15px;background-position:center right;text-align:center}.header-phone{text-align:center}.header-content{margin-top:46px}.header-content__title{margin-bottom:29px;font-size:30px}.header-content__subtitle{margin-bottom:30px;font-size:22px}.header-content__descr{margin-bottom:23px}.header-content__payment{margin-bottom:23px;font-size:20px}}@media (max-width:768px){.header{background-position:center left}.header-logo{margin:0 auto 30px auto}.header-contacts{justify-content:center}.header-content__title{font-size:26px}.header-content__subtitle{font-size:20px}.header-content__payment{font-size:19px}}@media (max-width:576px){.section-title{margin-bottom:20px}.button_up{padding:8px}.form{display:block}.form__input{max-width:none;min-width:auto}.form__label{display:block}.form-text{padding:22px 20px;background:#fff}.header{text-align:center;padding-top:15px}.header-logo{margin:0 auto 15px auto}.header-phone{font-size:14px;margin-bottom:15px}.header-content__title{font-size:22px}.header-content__subtitle{font-size:18px}}
+    </style>
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+<section class="navigation" id="navigation">
+    <div class="container">
+        <nav class="navigation-block" id="navigation-block">
+            <a href="#nav-block" class="navigation-btn">
+                <span class="navigation-btn__line"></span>
+            </a>
+            <ul class="navigation-block__list">
+                <li class="navigation-block__item"><a href="#header" class="navigation-block__link">О нас</a></li>
+                <li class="navigation-block__item"><a href="#features" class="navigation-block__link">Преимущества</a></li>
+                <li class="navigation-block__item"><a href="#price" class="navigation-block__link">Цены</a></li>
+                <li class="navigation-block__item"><a href="#feedback" class="navigation-block__link">Отзывы</a></li>
+                <li class="navigation-block__item"><a href="#schema" class="navigation-block__link">Схема работы</a></li>
+                <li class="navigation-block__item"><a href="#allinclusive" class="navigation-block__link">Стоимость</a></li>
+                <li class="navigation-block__item"><a href="#problems" class="navigation-block__link">Опасения</a></li>
+                <li class="navigation-block__item"><a href="#materials" class="navigation-block__link">Материалы</a></li>
+                <li class="navigation-block__item"><a href="#tour" class="navigation-block__link">Наша работа</a></li>
+                <li class="navigation-block__item"><a href="#upsell" class="navigation-block__link">Услуги</a></li>
+                <li class="navigation-block__item"><a href="#contacts" class="navigation-block__link">Контакты</a></li>
+            </ul>
+            <!-- /.navigation-block__list -->
+        </nav>
+    </div>
+</section>
+<!-- /.navigation -->
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-3">
+                <div class="header-logo">
+                    <img src="img/header/header-logo.png" alt="ГИПСОЛИТ">
+                </div>
+                <!-- /.header-logo -->
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 offset-lg-3">
+                <a href="tel:+380981234567" class="header-phone">+38 (098) 123 45 67</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="header-contacts">
+                    <button class="button button_small" id="help">
+                        получить консультацию
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-content">
+            <div class="row">
+                <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-duration="1s">
+                    <h1 class="header-content__title">Автоматизированная<br>
+                        штукатурка стен</h1>
+
+                    <span class="header-content__subtitle">
+                        Идеально ровные стены <br> в кратчайшие сроки
+                    </span>
+
+                    <div class="header-content__descr">
+                       <span class="header-content__info">Стоимость работ</span>
+                       <span class="header-content__price">от  <strong>300</strong> грн/м<sup>2</sup> </span>
+                    </div>
+
+                    <span class="header-content__payment">Оплата по факту!</span>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2  wow fadeInRight"  data-wow-duration="1s">
+                    <div class="form-text">
+                        <h2 class="form-text__title">Для расчёта точной стоимости
+                            закажите <strong>выезд замерщика</strong>
+                        </h2>
+
+                        <form action="#" method="post" class="form" id="header-form" name="headerForms">
+
+                            <div class="form__group">
+                                <label for="header-name" class="form__label d-sm-none d-md-block">Ваше имя</label>
+                                <input type="text"
+                                       class="form__input"
+                                       id="header-name"
+                                       name="name"
+                                       required
+                                       placeholder="Введите Ваше имя"
+                                >
+                            </div>
+
+                            <div class="form__group">
+                                <label for="header-phone" class="form__label d-sm-none d-md-block">Номер телефона</label>
+                                <input type="tel"
+                                       class="form__input"
+                                       id="header-phone"
+                                       name="phone"
+                                       required
+                                       placeholder="Введите номер телефона"
+                                >
+                            </div>
+
+                            <button class="button form__button" type="submit">Оставьте заявку</button>
+
+                            <span class="form__small">Приедем в день обращения<sup>*</sup></span>
+                        </form>
+                    </div>
+                    <!-- /.header-text -->
+
+                    <p class="header-content__schedule"> <sup>*</sup> - выезды на замер осуществляются <br>
+                        в рабоче дни Пн-Пт с 9:00 до 18:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /#header.header -->
+
+<section class="features" id="features">
+    <div class="container">
+        <h2 class="section-title features-title wow fadeInDown" data-wow-duration="1s">Преимущества работы с нами</h2>
+        <div class="features-slider">
+            <div class="features-block wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
+                <div class="features-block__img">
+                        <img data-src="img/features/coin.png" alt="Платите по факту">
+                </div>
+
+                <h3 class="features-block__title">Платите по факту</h3>
+                <!-- /.features-block__title -->
+
+                <p class="features-block__descr">
+                    Вы оплачиваете выполненные
+                    работы только после их выполнения.
+                    Никаких скрытых доплат и промежуточных платежей.
+                </p>
+                <!-- /.features-block__descr -->
+            </div>
+            <!-- /.features-block -->
+
+            <div class="features-block wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                <div class="features-block__img">
+                        <img data-src="img/features/folder.png" alt="Заключаем договор">
+                </div>
+
+                <h3 class="features-block__title">Заключаем договор</h3>
+                <!-- /.features-block__title -->
+
+                <p class="features-block__descr">
+                    Перед началом работ заключаем договор на юридическое лицо.
+                    Вы можете быть уверены, что все обязательства будут выполнены.
+                </p>
+                <!-- /.features-block__descr -->
+            </div>
+            <!-- /.features-block -->
+
+            <div class="features-block wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                <div class="features-block__img">
+                        <img data-src="img/features/clock.png" alt="Точно в срок">
+                </div>
+
+                <h3 class="features-block__title">Точно в срок</h3>
+                <!-- /.features-block__title -->
+
+                <p class="features-block__descr">
+                    Работаем строго по установленным срокам, которые прописаны
+                    в договоре. Если не успеваем, Вы платите меньше
+                </p>
+                <!-- /.features-block__descr -->
+            </div>
+            <!-- /.features-block -->
+
+            <div class="features-block wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                <div class="features-block__img">
+                        <img data-src="img/features/bank.png" alt="Экономите на материалах">
+                </div>
+
+                <h3 class="features-block__title">Экономите на материалах</h3>
+                <!-- /.features-block__title -->
+
+                <p class="features-block__descr">
+                    Мы являемся структурным подразделением компании поставщика строительных смесей <a href="http://gicema.ru ">gicema.ua</a> и даём Вам самые
+                    выгодные цены.
+                </p>
+                <!-- /.features-block__descr -->
+            </div>
+            <!-- /.features-block -->
+        </div>
+        <!-- /.features-slider -->
+    </div>
+</section>
+<!-- /.features -->
+
+<section class="price" id="price">
+    <div class="container">
+        <div class="price-header">
+
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 offset-lg-3">
+                    <h2 class="section-title section-light wow fadeInDown" data-wow-duration="1s">Цены</h2>
+                    <p class="section-subtitle section-light price-header__subtitle wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">Выберите вариант, который подходит Вам&#58;</p>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="price-header__button">
+                        <button class="button button_small price-header__calc">Рассчитать точную стоимость</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+       <div class="row">
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 d-lg-flex">
+                <div class="price-block  wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <h3 class="price-block__title">Штукатурка вашим материалом</h3>
+
+                    <div class="price-block__img">
+                        <img data-src="img/price/1.jpg" alt="Штукатурка вашим материалом">
+                    </div>
+                    <!-- /.price-block__img -->
+
+
+                    <span class="price-block__cost">от <strong>300</strong> грн/м<sup>2</sup></span>
+
+                    <ul class="price-block__list">
+                        <li class="price-block__item">Проведение работ</li>
+                        <li class="price-block__item">Уборка</li>
+                    </ul>
+                   <!-- /.price-block__list -->
+
+                    <button class="button price-block__btn">Заказать</button>
+
+                </div>
+                <!-- /.price-block -->
+            </div>
+           <!-- /.col-4 -->
+
+           <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 d-lg-flex">
+               <div class="price-block wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                   <h3 class="price-block__title">Штукатурка под шпатлёвку</h3>
+
+                   <div class="price-block__img">
+                       <img data-src="img/price/2.jpg" alt="Штукатурка под шпатлёвку">
+                   </div>
+                   <!-- /.price-block__img -->
+
+                   <span class="price-block__cost">от <strong>530</strong> грн/м<sup>2</sup></span>
+
+                   <ul class="price-block__list">
+                       <li class="price-block__item">Завоз материала и его подъём</li>
+                       <li class="price-block__item">Проведение работ</li>
+                       <li class="price-block__item">Уборка</li>
+                       <li class="price-block__item">Гарантия 2 года</li>
+                   </ul>
+                   <!-- /.price-block__list -->
+
+                   <button class="button price-block__btn">Заказать</button>
+
+               </div>
+               <!-- /.price-block -->
+           </div>
+           <!-- /.col-4 -->
+
+
+           <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 d-lg-flex">
+               <div class="price-block  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                   <h3 class="price-block__title">Штукатурка под обои</h3>
+
+                   <div class="price-block__img">
+                       <img data-src="img/price/3.jpg" alt="Штукатурка под обои">
+                   </div>
+                   <!-- /.price-block__img -->
+
+                   <span class="price-block__cost">от <strong>560</strong> грн/м<sup>2</sup></span>
+
+                   <ul class="price-block__list">
+                       <li class="price-block__item">Завоз материала и его подъём</li>
+                       <li class="price-block__item">Проведение работ</li>
+                       <li class="price-block__item">Уборка</li>
+                       <li class="price-block__item">Гарантия 2 года</li>
+                       <li class="price-block__item">Можно сразу клеить обои</li>
+                   </ul>
+                   <!-- /.price-block__list -->
+
+                   <button class="button price-block__btn">Заказать</button>
+
+               </div>
+               <!-- /.price-block -->
+           </div>
+           <!-- /.col-4 -->
+
+       </div>
+       <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</section>
+<!-- /#price.price -->
+
+<section class="feedback" id="feedback">
+    <div class="container">
+        <h2 class="section-title wow fadeInDown" data-wow-duration="1s">Отзывы</h2>
+
+        <div class="feedback-slider">
+            <div class="feedback-slider__item">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <!-- /.photo-slider-top -->
+                        <div class="fotorama"
+                             data-click="true"
+                             data-swipe="true"
+                             data-loop="true"
+                             data-width="100%"
+                             data-autoplay="3000"
+                             data-nav="thumbs">
+
+                            <img data-src="img/feedback/work1.jpg" alt="Work1">
+                            <img data-src="img/feedback/work2.jpg" alt="Work2">
+                            <img data-src="img/feedback/work3.jpg" alt="Work3">
+                            <img data-src="img/feedback/work4.jpg" alt="Work4">
+                            <img data-src="img/feedback/work5.jpg" alt="Work5">
+                            <img data-src="img/feedback/work6.jpg" alt="Work6">
+                        </div>
+
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="feedback-text">
+                        <p class="feedback-text__descr">Объект: г.Киев, проспект Победы д.10</p>
+                        <p class="feedback-text__descr">Площадь: <strong>357 м<sup>2</sup></strong></p>
+                        <p class="feedback-text__descr">Выполнен за: <strong>10 дней</strong></p>
+                        <p class="feedback-text__descr">Стоимость: <strong>550 грн за квадратный метр</strong></p>
+                        <p class="feedback-text__descr">Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+                    </div>
+                    <!-- /.feedback-text -->
+
+                    <div class="feedback-card">
+                        <div class="feedback-card__img">
+                            <img data-src="img/feedback/feedback-avatar.png" alt="Author Icon">
+                        </div>
+
+                        <div class="feedback-card__text">
+                            <span class="feedback-card__title">Заказчик</span>
+                            <!-- /.feedback-card__title -->
+
+                            <h4 class="feedback-card__author">
+                                    Нахимов Артём
+                                </h4>
+                            <!-- /.feedback-card__author -->
+                        </div>
+                        <!-- /.feedback-card__text -->
+                    </div>
+                    <!-- /.feedback-card -->
+
+                    <div class="feedback-comment wow zoomIn" data-wow-duration="1s">
+                        <p class="feedback-comment__descr">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet.
+                            Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                            Proin sodales pulvinar tempor.
+                        </p>
+
+                    </div>
+                    <!-- /.feedback-comment -->
+
+                </div>
+            </div>
+        </div>
+            <!-- /.feedback-slider__item -->
+
+            <div class="feedback-slider__item">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <!-- /.photo-slider-top -->
+                        <div class="fotorama"
+                             data-click="true"
+                             data-swipe="true"
+                             data-loop="true"
+                             data-width="100%"
+                             data-autoplay="3000"
+                             data-nav="thumbs">
+
+                            <img data-src="img/feedback/work1.jpg" alt="Work1">
+                            <img data-src="img/feedback/work2.jpg" alt="Work2">
+                            <img data-src="img/feedback/work3.jpg" alt="Work3">
+                            <img data-src="img/feedback/work4.jpg" alt="Work4">
+                            <img data-src="img/feedback/work5.jpg" alt="Work5">
+                            <img data-src="img/feedback/work6.jpg" alt="Work6">
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="feedback-text">
+                            <p class="feedback-text__descr">Объект: г.Киев, проспект Победы д.10</p>
+                            <p class="feedback-text__descr">Площадь: <strong>357 м<sup>2</sup></strong></p>
+                            <p class="feedback-text__descr">Выполнен за: <strong>10 дней</strong></p>
+                            <p class="feedback-text__descr">Стоимость: <strong>550 грн за квадратный метр</strong></p>
+                            <p class="feedback-text__descr">Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+                        </div>
+                        <!-- /.feedback-text -->
+
+                        <div class="feedback-card">
+                            <div class="feedback-card__img">
+                                <img data-src="img/feedback/feedback-avatar.png" alt="Author Icon">
+                            </div>
+
+                            <div class="feedback-card__text">
+                                <span class="feedback-card__title">Заказчик</span>
+                                <!-- /.feedback-card__title -->
+
+                                <h4 class="feedback-card__author">
+                                    Нахимов Артём
+                                </h4>
+                                <!-- /.feedback-card__author -->
+                            </div>
+                            <!-- /.feedback-card__text -->
+                        </div>
+                        <!-- /.feedback-card -->
+
+                        <div class="feedback-comment wow zoomIn" data-wow-duration="1s">
+                            <p class="feedback-comment__descr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet.
+                                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                                Proin sodales pulvinar tempor.
+                            </p>
+
+                        </div>
+                        <!-- /.feedback-comment -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.feedback-slider__item -->
+
+            <div class="feedback-slider__item">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <!-- /.photo-slider-top -->
+                        <div class="fotorama"
+                             data-click="true"
+                             data-swipe="true"
+                             data-loop="true"
+                             data-width="100%"
+                             data-autoplay="3000"
+                             data-nav="thumbs">
+
+                            <img data-src="img/feedback/work1.jpg" alt="Work1">
+                            <img data-src="img/feedback/work2.jpg" alt="Work2">
+                            <img data-src="img/feedback/work3.jpg" alt="Work3">
+                            <img data-src="img/feedback/work4.jpg" alt="Work4">
+                            <img data-src="img/feedback/work5.jpg" alt="Work5">
+                            <img data-src="img/feedback/work6.jpg" alt="Work6">
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="feedback-text">
+                            <p class="feedback-text__descr">Объект: г.Киев, проспект Победы д.10</p>
+                            <p class="feedback-text__descr">Площадь: <strong>357 м<sup>2</sup></strong></p>
+                            <p class="feedback-text__descr">Выполнен за: <strong>10 дней</strong></p>
+                            <p class="feedback-text__descr">Стоимость: <strong>550 грн за квадратный метр</strong></p>
+                            <p class="feedback-text__descr">Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+                        </div>
+                        <!-- /.feedback-text -->
+
+                        <div class="feedback-card">
+                            <div class="feedback-card__img">
+                                <img data-src="img/feedback/feedback-avatar.png" alt="Author Icon">
+                            </div>
+
+                            <div class="feedback-card__text">
+                                <span class="feedback-card__title">Заказчик</span>
+                                <!-- /.feedback-card__title -->
+
+                                <h4 class="feedback-card__author">
+                                    Нахимов Артём
+                                </h4>
+                                <!-- /.feedback-card__author -->
+                            </div>
+                            <!-- /.feedback-card__text -->
+                        </div>
+                        <!-- /.feedback-card -->
+
+                        <div class="feedback-comment wow zoomIn" data-wow-duration="1s">
+                            <p class="feedback-comment__descr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet.
+                                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                                Proin sodales pulvinar tempor.
+                            </p>
+
+                        </div>
+                        <!-- /.feedback-comment -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.feedback-slider__item -->
+
+        </div>
+        <!-- /.feedback-slider -->
+
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2">
+              <div class="feedback-content">
+                  <h3 class="feedback-content__title wow fadeInDown" data-wow-duration="1s">
+                      Хотите так же? Оставьте Ваши контактные данные
+                  </h3>
+
+                  <form action="#" method="post" class="form feedback-form wow fadeInUp"
+                        data-wow-duration="1s"
+                        name="feedbackForm"
+                        id="feedback-form">
+                            <div class="feedback-form__wrap">
+                                <div class="form__group feedback-form__group">
+                                    <label for="header-name" class="form__label  d-sm-none d-md-block">Ваше имя</label>
+                                    <input type="text"
+                                           class="form__input feedback-form__input"
+                                           id="feedback-name"
+                                           name="name"
+                                           placeholder="Введите Ваше имя"
+                                    >
+                                </div>
+
+                                <div class="form__group feedback-form__group">
+                                    <label for="header-phone" class="form__label d-sm-none d-md-block">Номер телефона</label>
+                                    <input type="tel"
+                                           class="form__input feedback-form__input"
+                                           id="feedback-phone"
+                                           name="phone"
+                                           placeholder="Введите номер телефона"
+                                    >
+                                </div>
+                            </div>
+
+
+                      <button class="button" type="submit">Оставьте заявку</button>
+
+                  </form>
+              </div>
+              <!-- /.feedback-form -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="feedback-hand d-none d-md-block">
+        <img data-src="img/feedback/hand.png" alt="Hand">
+    </div>
+</section>
+<!-- /#feedback.feedback -->
+
+<section class="schema" id="schema">
+    <div class="container">
+        <h2 class="section-title wow fadeInDown" data-wow-duration="1s">Схема работы</h2>
+        <p class="section-subtitle schema-subtitle wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1s">Работа над вашим объектом будет включать в себя следующие этапы:</p>
+        <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 col-xl-3 d-sm-flex">
+                <div class="schema-block wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
+                    <div class="schema-block__img">
+                        <img data-src="img/schema/order.png" alt="Заявка">
+                    </div>
+
+                    <h3 class="schema-block__title">Заявка</h3>
+
+                    <p class="schema-block__descr">
+                        Оставляете онлайн заявку или звоните +7 495 771 05 08
+                    </p>
+                </div>
+                <!-- /.schema-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 col-xl-3 offset-xl-1 d-md-flex">
+                <div class="schema-block wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
+                    <div class="schema-block__img">
+                        <img data-src="img/schema/delivery.png" alt="Выезд специалиста">
+                    </div>
+
+                    <h3 class="schema-block__title">Выезд специалиста</h3>
+
+                    <p class="schema-block__descr">
+                        В течение 1 рабочего дня к Вам приезжает специалист, который выполнит замеры для точной стоимости работ
+                    </p>
+                </div>
+                <!-- /.schema-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 col-xl-3 offset-xl-1 d-md-flex">
+                <div class="schema-block wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                    <div class="schema-block__img">
+                        <img data-src="img/schema/agreem.png" alt="Составление договора">
+                    </div>
+
+                    <h3 class="schema-block__title">Составление договора</h3>
+
+                    <p class="schema-block__descr">
+                        Готовим договор и согласовываем с Вами
+                    </p>
+                </div>
+                <!-- /.schema-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 col-xl-3 d-md-flex">
+                <div class="schema-block wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="schema-block__img">
+                        <img data-src="img/schema/startwork.png" alt="Начало работ">
+                    </div>
+
+                    <h3 class="schema-block__title">Начало работ</h3>
+
+                    <p class="schema-block__descr">
+                        Доставляем материалы, оборудование, подписываем договор и начинаем работы
+                    </p>
+                </div>
+                <!-- /.schema-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 col-xl-3 offset-xl-1 d-md-flex">
+                <div class="schema-block wow fadeInUp"  data-wow-delay="1s" data-wow-duration="1s">
+                    <div class="schema-block__img">
+                        <img data-src="img/schema/finish.png" alt="Завершение работ">
+                    </div>
+
+                    <h3 class="schema-block__title">Завершение работ</h3>
+
+                    <p class="schema-block__descr">
+                        После окончания работ Вы проверяете качество и подписываете акт сдачи, производите оплату.
+                    </p>
+                </div>
+                <!-- /.schema-block -->
+            </div>
+            <!-- /.col-3 -->
+
+
+        </div>
+    </div>
+
+</section>
+<!-- /#scema.schema -->
+
+<section class="allinclusive" id="allinclusive">
+    <div class="container">
+        <h2 class="section-title section-sub allinclusive-title wow fadeInDown" data-wow-duration="1s">Все на 100% включено!</h2>
+        <p class="section-subtitle allinclusive-subtitle wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1s">При выполнении работ с нашим материалом в стоимость входит:</p>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">1.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Материал:</h3>
+                        <p class="allinclusive-block__descr">штукатурка, грунтовка или бетоноконтакт, маяки, сетка на
+                            стыки</p>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">2.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Доставка оборудования
+                            и материала на объект</h3>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">3.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Подготовка поверхности</h3>
+                        <p class="allinclusive-block__descr">(очистка, грунтование)</p>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">4.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Установка маяков</h3>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">5.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Оштукатуривание поверхности</h3>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">6.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Удаление маяков</h3>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">7.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Глянцевание</h3>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+            <!-- /.col-3 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="allinclusive-block wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="allinclusive-block__circle">
+                        <span class="allinclusive-block__number">8.</span>
+                    </div>
+                    <!-- /.allinclusive-block__circle -->
+
+                    <div class="allinclusive-block__text">
+                        <h3 class="allinclusive-block__title">Уборка и вывоз мусора</h3>
+                    </div>
+                    <!-- /.allinclusive-block__text -->
+                </div>
+                <!-- /.allinclusive-block -->
+            </div>
+            <!-- /.col-3 -->
+
+        </div>
+    </div>
+
+</section>
+<!-- /#alliclusive.allinclusive -->
+
+<section class="problems" id="problems">
+    <div class="container">
+        <h2 class="section-title wow fadeInDown" data-wow-duration="1s">Мы развеем все опасения</h2>
+        <div class="row">
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 d-sm-flex">
+                <div class="problems-block problems-block-bad wow fadeInLeft"  data-wow-duration="1s">
+                    <h3 class="problems-block__title problems-block-bad__title">Какие могут быть проблемы:</h3>
+
+                    <ul class="problems-block__list">
+                        <li class="problems-block__item problems-block-bad__item">Стены и углы будут неровными</li>
+                        <li class="problems-block__item problems-block-bad__item">Ремонт затянется на долгие месяцы</li>
+                        <li class="problems-block__item problems-block-bad__item">Сложности с доставкой и разгрузкой материалов</li>
+                        <li class="problems-block__item problems-block-bad__item">Останется мусор и пыль после работ</li>
+                    </ul>
+                    <!-- /.problems-block__list -->
+                </div>
+                <!-- /.problems-block problems-block__bad -->
+            </div>
+            <!-- /.col-5 -->
+
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 offset-lg-2 d-sm-flex">
+                <div class="problems-block problems-block-good wow fadeInRight" data-wow-duration="1s">
+                    <h3 class="problems-block__title">Какие могут быть проблемы:</h3>
+
+                    <ul class="problems-block__list">
+                        <li class="problems-block__item problems-block-good__item">
+                            Высокая квалификация специалистов + минимум
+                            5 летний опыт работы = идеально ровные поверхности</li>
+                        <li class="problems-block__item problems-block-good__item">
+                            Соблюдаем сроки, которые прописаны в договоре.
+                            На квартиру площадью 135 м2 уходит от 3 до 5 дней</li>
+                        <li class="problems-block__item problems-block-good__item">Доставка материала и подъём бесплатно</li>
+                        <li class="problems-block__item problems-block-good__item">Убираем и вывозим мусор после работ</li>
+                    </ul>
+                    <!-- /.problems-block__list -->
+                </div>
+                <!-- /.problems-block problems-block__bad -->
+            </div>
+            <!-- /.col-5 -->
+        </div>
+    </div>
+
+    <div class="problems-girl">
+        <img data-src="img/problems/problems-girl.png" alt="Problems-girl">
+    </div>
+    <!-- /.problems-girl -->
+</section>
+<!-- /#problems.problems -->
+
+<section class="materials" id="materials">
+    <div class="container">
+        <h2 class="section-title wow fadeInDown" data-wow-duration="1s">Материалы</h2>
+        <p class="section-subtitle materials-subtitle wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1s">Мы работаем только качественными, проверенными временем материалами, следующих производителей:</p>
+
+        <div class="materials-slider">
+            <div class="materials-block wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
+                <div class="materials-block__img">
+                    <img data-src="img/materials/knauf.png" alt="Knauf">
+                </div>
+                <h3 class="materials-block__title">Knauf</h3>
+                <p class="materials-block__descr">МП-75 <strong>245</strong> руб/меш</p>
+                <a href="#" class="materials-block__link">Сертификат</a>
+            </div>
+            <!-- /.materials-block -->
+
+            <div class="materials-block wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                <div class="materials-block__img">
+                    <img data-src="img/materials/volma.png" alt="Volma">
+                </div>
+                <h3 class="materials-block__title">Volma</h3>
+                <p class="materials-block__descr">
+                    Аква слой <strong>245</strong> руб/меш <br>
+                    Гипс актив <strong>245</strong> руб/меш
+                </p>
+                <a href="#" class="materials-block__link">Сертификат</a>
+            </div>
+            <!-- /.materials-block -->
+
+            <div class="materials-block wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
+                <div class="materials-block__img">
+                    <img data-src="img/materials/forman.png" alt="Forman">
+                </div>
+                <h3 class="materials-block__title">Forman</h3>
+                <p class="materials-block__descr">
+                    Аква слой <strong>245</strong> руб/меш <br>
+                    Гипс актив <strong>245</strong> руб/меш
+                </p>
+                <a href="#" class="materials-block__link">Сертификат</a>
+            </div>
+            <!-- /.materials-block -->
+
+
+            <div class="materials-block wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                <div class="materials-block__img">
+                    <img data-src="img/materials/ceresit.png" alt="Ceresit">
+                </div>
+                <h3 class="materials-block__title">Ceresit</h3>
+                <p class="materials-block__descr">
+                    Аква слой <strong>245</strong> руб/меш <br>
+                    Гипс актив <strong>245</strong> руб/меш
+                </p>
+                <a href="#" class="materials-block__link">Сертификат</a>
+            </div>
+            <!-- /.materials-block -->
+        </div>
+        <!-- /.materials-slider -->
+
+        <p class="materials-offer">Вы можете приобрести материалы по оптовым ценам на сайте <a href="http://google.com.ua" onclick="event.preventDefault(); window.open(this.href)"  class="materials-block__link">gicema.ua </a>
+            или по телефону <strong>+38 (098) 123 45 67</strong></p>
+        <!-- /.materials-offer -->
+    </div>
+</section>
+<!-- /#materials.materials -->
+
+<section class="tour" id="tour">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-5 wow fadeInLeft" data-wow-duration="1s">
+                <h2 class="header-content__title tour__title" >Посмотрите <br> как мы работаем</h2>
+
+                <p class="header-content__subtitle tour__subtitle">Хотите удостовериться в профессионализме наших сотрудников? </p>
+                <p class="header-content__subtitle tour__subtitle">Вы можете сделать это, приехав на один из наших объектов, и понаблюдав за ходом работ. Увидите оборудование, материалы и качество исполнения.</p>
+            </div>
+
+            <div class="col-12 col-lg-5 offset-lg-1 col-xl-4 offset-xl-3  wow fadeInRight" data-wow-duration="1s">
+                <div class="form-text tour-text">
+                    <h2 class="form-text__title">Оставьте контактные данные для связи</h2>
+
+                    <form action="#" method="post" class="form" id="tour-form" name="tourForm">
+
+                        <div class="form__group">
+                            <label for="tour-name" class="form__label d-sm-none d-md-block">Ваше имя</label>
+                            <input type="text"
+                                   class="form__input"
+                                   id="tour-name"
+                                   name="name"
+                                   placeholder="Введите Ваше имя"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="tour-phone" class="form__label d-sm-none d-md-block">Номер телефона</label>
+                            <input type="tel"
+                                   class="form__input"
+                                   id="tour-phone"
+                                   name="phone"
+                                   placeholder="Введите номер телефона"
+                            >
+                        </div>
+
+                        <button class="button form__button button_xs" type="submit">записаться на просмотр</button>
+                        <small class="form__small">Подберем ближайщий к вам объект</small>
+                    </form>
+                </div>
+                <!-- /.header-text -->
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /#tour.tour -->
+
+<section class="upsell" id="upsell">
+    <div class="container">
+        <h2 class="section-title section-light wow fadeInDown" data-wow-duration="1s">Дополнительные услуги</h2>
+        <p class="section-subtitle section-light upsell-subtitle wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1s">Помимо штукатурных рыбот Вы можете заказать у нас
+            следующие услуги</p>
+
+        <div class="row">
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
+                <div class="upsell-block wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
+                    <div class="upsell-block__img">
+                        <img data-src="img/upsell/work1.jpg" alt="Монтаж электропроводки">
+                    </div>
+
+                    <h3 class="upsell-block__title">Монтаж электропроводки</h3>
+
+                    <button class="button button_small upsell-block__btn">цены</button>
+                </div>
+                <!-- /.upsell-block -->
+            </div>
+
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
+                <div class="upsell-block wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="upsell-block__img">
+                        <img data-src="img/upsell/work2.jpg" alt="Стяжка пола">
+                    </div>
+
+                    <h3 class="upsell-block__title">Стяжка пола</h3>
+
+                    <button class="button button_small upsell-block__btn">цены</button>
+                </div>
+                <!-- /.upsell-block -->
+            </div>
+
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
+                <div class="upsell-block wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
+                    <div class="upsell-block__img">
+                        <img data-src="img/upsell/work3.jpg" alt="Сантехнические работы">
+                    </div>
+
+                    <h3 class="upsell-block__title">Сантехнические работы</h3>
+
+                    <button class="button button_small upsell-block__btn">цены</button>
+                </div>
+                <!-- /.upsell-block -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /#upsell.upsell -->
+
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-duration="1s">
+                <h2 class="contacts-title" >Контакты</h2>
+
+                <div class="contacts-block contacts-block__address">
+                    <span class="contacts-block__title">Адрес офиса:</span>
+                    <p class="contacts-block__descr">Киев, Голосеевский проспект, 106, офис 2</p>
+                </div>
+                <!-- /.contacts-block -->
+
+                <!-- Google Maps -->
+                <div id="map"></div>
+
+                <div class="contacts-block">
+                    <span class="contacts-block__title">Номер телефона: </span>
+                    <a href="tel:+380981234567" class="contacts-block__link contacts-block__phone"><strong>+38 (098) 123 45 67</strong></a>
+                </div>
+                <!-- /.contacts-block -->
+
+                <div class="contacts-block">
+                    <span class="contacts-block__title">E-mail:</span>
+                    <a href="mailto:order@gipsolit.ua" class="contacts-block__link">order@gipsolit.ua</a>
+                </div>
+                <!-- /.contacts-block -->
+
+                <div class="contacts-block">
+                    <span class="contacts-block__title">Реквизиты:</span>
+                    <p class="contacts-block__descr">ИНН 35453453  ОГРН 34234234</p>
+                </div>
+                <!-- /.contacts-block -->
+            </div>
+
+            <div class="col-12 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2 wow fadeInRight" data-wow-duration="1s">
+                <div class="form-text tour-text">
+                    <h2 class="form-text__title">Оставьте контактные данные для связи</h2>
+
+                    <form action="#" method="post" class="form contacts-form" id="contacts-form" name="contactsForm">
+
+                        <div class="form__group">
+                            <label for="contacts-name" class="form__label d-sm-none d-md-block">Ваше имя</label>
+                            <input type="text"
+                                   class="form__input"
+                                   id="contacts-name"
+                                   name="name"
+                                   placeholder="Введите Ваше имя"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="contacts-phone" class="form__label d-sm-none d-md-block">Номер телефона</label>
+                            <input type="tel"
+                                   class="form__input"
+                                   id="contacts-phone"
+                                   name="phone"
+                                   placeholder="Введите номер телефона"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="contacts-email" class="form__label d-sm-none d-md-block">E-mail</label>
+                            <input type="email"
+                                   class="form__input"
+                                   id="contacts-email"
+                                   name="email"
+                                   placeholder="Введите email"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="contacts-message" class="form__label d-sm-none d-md-block">Сообщение</label>
+                            <textarea class="form__textarea"
+                                      id="contacts-message"
+                                      rows="3"
+                                      name="message"
+                            ></textarea>
+                        </div>
+
+
+
+                        <button class="button form__button button_xs contacts-form__button" type="submit">записаться на просмотр</button>
+
+                    </form>
+                </div>
+                <!-- /.header-text -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
+<!-- /#contacts.contacts -->
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="header-logo">
+                    <img data-src="img/header/header-logo.png" alt="ГИПСОЛИТ">
+                </div>
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-12 col-md-4">
+                <div class="footer-block">
+                    <a href="tel:+380981234567" class="contacts-block__link contacts-block__phone footer-block__link"><strong>+38 (098) 123 45 67</strong></a>
+                    <a href="mailto:order@gipsolit.ua" class="contacts-block__link footer-block__link">order@gipsolit.ua</a>
+                    <p class="contacts-block__link footer-block__link">Пн-Пт: с 9:00 до 18:00</p>
+                </div>
+                <!-- /.footer-block -->
+
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-12 col-md-4">
+                <div class="footer-block footer-block__dev">
+                    <span class="footer-block__title">Разработка сайта:</span>
+
+                    <div class="footer-block__img">
+                        <img data-src="img/footer/dev-logo.png" alt="ВЭБКенгуру">
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-4 -->
+
+        </div>
+    </div>
+</footer>
+<!-- /#footer.footer -->
+
+<!-- POPUPS -->
+<div class="popup popup-phone" id="popup-call">
+    <div class="popup-content popup-phone-content">
+        <button class="popup-content__close">&times;</button>
+        <h2 class="popup-content__title">Заинтересовало?</h2>
+        <p class="popup-content__descr popup-phone-content__descr">Оставьте контактные данные для связи</p>
+
+        <form action="#" method="post" class="form contacts-form" id="popup-form" name="popupForm">
+
+            <div class="form__group">
+                <label for="contacts-name" class="form__label d-sm-none d-md-block">Ваше имя</label>
+                <input type="text"
+                       class="form__input"
+                       id="popup-name"
+                       name="name"
+                       placeholder="Введите Ваше имя"
+                >
+            </div>
+
+            <div class="form__group">
+                <label for="contacts-phone" class="form__label d-sm-none d-md-block">Номер телефона</label>
+                <input type="tel"
+                       class="form__input"
+                       id="popup-phone"
+                       name="phone"
+                       placeholder="Введите номер телефона"
+                >
+            </div>
+
+            <div class="form__group">
+                <label for="popup-message" class="form__label d-sm-none d-md-block">Сообщение</label>
+                <textarea class="form__textarea" id="popup-message" rows="3" name="message" placeholder="Введите сообщение"></textarea>
+            </div>
+
+
+            <button class="button form__button button_xs contacts-form__button" type="submit">записаться на просмотр
+            </button>
+
+        </form>
+
+    </div>
+    <!-- /.popup-content -->
+</div>
+<!-- /#popup.popup.popup-phone -->
+
+<div class="popup popup-upsell" id="popup-upsell">
+    <div class="popup-content popup-upsell-content">
+        <button class="popup-content__close">&times;</button>
+        <h2 class="popup-content__title popup-upsell-content__title">Сантехнические услуги</h2>
+
+        <table class="popup-content__table">
+            <thead>
+                <tr class="popup-content__tr">
+                    <th class="popup-content__th" scope="col">Услуга</th>
+                    <th  class="popup-content__th" scope="col">Цена</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="popup-content__tr">
+                    <td class="popup-content__td">Установка смесителя</td>
+                    <td class="popup-content__td">670</td>
+                </tr>
+
+                <tr class="popup-content__tr">
+                    <td class="popup-content__td">Раковины (без смесителя)</td>
+                    <td class="popup-content__td">1200</td>
+                </tr>
+
+                <tr class="popup-content__tr">
+                    <td class="popup-content__td">Монтаж мойки кухонной</td>
+                    <td class="popup-content__td">1600</td>
+                </tr>
+
+                <tr class="popup-content__tr">
+                    <td class="popup-content__td">Монтаж полотенцесушителя с подготовкой труб, устройством перемычки,
+                        монтажом кранов</td>
+                    <td class="popup-content__td">5000</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- /.popup-content__table -->
+    </div>
+    <!-- /.popup-content popup-content-upsell -->
+</div>
+<!-- /.popup popup-upsell -->
+
+<div class="popup popup-thanks" id="popup-thanks">
+    <div class="popup-content popup-thanks-content">
+        <button class="popup-content__close">&times;</button>
+        <h2 class="popup-content__title popup-thanks-content__title">Спасибо за обращение</h2>
+        <p class="popup-content__descr popup-thanks-content__descr">Наш специалист свяжется с Вами в ближайшее время!</p>
+
+    </div>
+    <!-- /.popup-content -->
+</div>
+<!-- /#popup-thanks.popup popup-thanks -->
+
+<!-- CALCULATOR -->
+<div class="popup popup-payment" id="popup-payment">
+    <div class="popup-content popup-payment-content">
+        <button class="popup-content__close">&times;</button>
+
+        <div class="popup-calculator">
+            <h2 class="popup-content__title popup-payment-content__title">Калькулятор</h2>
+
+            <form action="#" method="post" class="form contacts-form popup-calculator-form" id="popup-calculator" name="calcForm">
+
+                <div class="popup-calculator__tabs" data-tabs="false">
+                    <h3 class="popup-content__title popup-calculator__title">Где находится объект ?</h3>
+
+                    <div class="form__wrap popup-calculator__wrap">
+                        <div class="form__group">
+                            <div class="popup-calculator__img">
+                                <img data-src="img/popup-calculator/city.png" alt="Киев">
+                            </div>
+                            <!-- /.popup-calculator__img -->
+
+                            <input type="checkbox"
+                                   class="form__checkbox"
+                                   id="calculator-city"
+                                   data-place="Киев"
+                                   value="Киев"
+                            >
+                            <label for="calculator-city" class="form__label form__label-check">Киев</label>
+
+                        </div>
+                        <!-- /.form__group -->
+
+                        <div class="form__group">
+                            <div class="popup-calculator__img">
+                                <img data-src="img/popup-calculator/region.png" alt="Область">
+                            </div>
+                            <!-- /.popup-calculator__img -->
+
+                            <input type="checkbox"
+                                   class="form__checkbox"
+                                   id="calculator-region"
+                                   data-place="Область"
+                                   value="Область"
+                            >
+                            <label for="calculator-region" class="form__label form__label-check">Область</label>
+
+                        </div>
+                        <!-- /.form__group -->
+                    </div>
+                    <!-- /.form__wrap -->
+
+
+                </div>
+                <!-- /.popup-calculator__tabs -->
+
+                <div class="popup-calculator__tabs" data-tabs="false">
+                    <h3 class="popup-content__title popup-calculator__title">Как будем штукатурить ?</h3>
+
+                    <div class="form__wrap popup-calculator__wrap">
+                        <div class="form__group">
+                            <div class="popup-calculator__img">
+                                <img data-src="img/popup-calculator/paint-roller.png" alt="Под шпатлевку">
+                            </div>
+                            <!-- /.popup-calculator__img -->
+
+                            <input type="checkbox"
+                                   class="form__checkbox"
+                                   id="calculator-roller"
+                                   data-roller="Под шпатлевку"
+                                   value="Под шпатлевку"
+                            >
+                            <label for="calculator-roller" class="form__label form__label-check">Под шпатлевку</label>
+
+                        </div>
+                        <!-- /.form__group -->
+
+                        <div class="form__group">
+                            <div class="popup-calculator__img">
+                                <img data-src="img/popup-calculator/wallpaper.png" alt="Под обои">
+                            </div>
+                            <!-- /.popup-calculator__img -->
+
+                            <input type="checkbox"
+                                   class="form__checkbox"
+                                   id="calculator-wallpaper"
+                                   data-roller="Под обои"
+                                   value="Под обои"
+                            >
+                            <label for="calculator-wallpaper" class="form__label form__label-check">Под обои</label>
+
+                        </div>
+                        <!-- /.form__group -->
+                    </div>
+                    <!-- /.form__wrap -->
+
+                </div >
+                <!-- /.popup-calculator__tabs -->
+
+
+                <div class="popup-calculator__tabs" data-tabs="false">
+                    <h3 class="popup-content__title popup-calculator__title">Какова неровность стен ?</h3>
+
+                    <div class="form__wrap popup-calculator__wrap">
+                        <div class="form__group">
+                            <div class="popup-calculator__img">
+                                <img data-src="img/popup-calculator/brick-wall.png" alt="20 мм">
+                            </div>
+                            <!-- /.popup-calculator__img -->
+
+                            <input type="checkbox"
+                                   class="form__checkbox"
+                                   id="calculator-wall-min"
+                                   data-size="20"
+                                   value="20"
+                            >
+                            <label for="calculator-wall-min" class="form__label form__label-check">20 мм</label>
+
+                        </div>
+                        <!-- /.form__group -->
+
+                        <div class="form__group">
+                            <div class="popup-calculator__img">
+                                <img data-src="img/popup-calculator/brick-wall-medium.png" alt="40 мм">
+                            </div>
+                            <!-- /.popup-calculator__img -->
+
+                            <input type="checkbox"
+                                   class="form__checkbox"
+                                   id="calculator-wall-medium"
+                                   data-size="40"
+                                   value="40"
+                            >
+                            <label for="calculator-wall-medium" class="form__label form__label-check">40 мм</label>
+
+                        </div>
+                        <!-- /.form__group -->
+
+                        <div class="form__group">
+                            <div class="popup-calculator__img">
+                                <img data-src="img/popup-calculator/brick-wall-max.png" alt="60 мм">
+                            </div>
+                            <!-- /.popup-calculator__img -->
+
+                            <input type="checkbox"
+                                   class="form__checkbox"
+                                   id="calculator-wall-max"
+                                   data-size="60"
+                                   value="60"
+
+                            >
+                            <label for="calculator-wall-max" class="form__label form__label-check">60 мм</label>
+
+                        </div>
+                        <!-- /.form__group -->
+                    </div>
+                    <!-- /.form__wrap -->
+                </div>
+                <!-- /.popup-calculator__tabs -->
+
+
+                <button class="button button_darken popup-calculator__btn" type="button">Далее</button>
+
+                <div class="popup-calculator__controls">
+                    <!--
+                    <span class="popup-calculator__step "></span>
+                    <span class="popup-calculator__step popup-calculator__step_active"></span>
+                    <span class="popup-calculator__step"></span>
+                    -->
+                </div>
+            </form>
+        </div>
+        <!-- /.popup-calculator -->
+
+        <div class="popup-caller">
+
+            <h2 class="popup-content__title popup-payment-content__title">Вызов замерщика</h2>
+
+            <form action="#" method="post" class="form contacts-form" id="popup-caller" name="paymentForm">
+
+                <div class="form__group">
+                    <label for="caller-name" class="form__label d-sm-none d-md-block">Ваше имя</label>
+                    <input type="text"
+                           class="form__input"
+                           id="caller-name"
+                           name="name"
+                           placeholder="Введите Ваше имя"
+                    >
+                </div>
+
+                <div class="form__group">
+                    <label for="caller-phone" class="form__label d-sm-none d-md-block">Номер телефона</label>
+                    <input type="tel"
+                           class="form__input"
+                           id="caller-phone"
+                           name="phone"
+                           placeholder="Введите номер телефона"
+                    >
+                </div>
+
+                <div class="form__group">
+                    <label for="caller-message" class="form__label d-sm-none d-md-block">Сообщение</label>
+                    <textarea class="form__textarea" id="caller-message" rows="3" name="message"></textarea>
+                </div>
+
+
+                <button class="button form__button button_xs" type="submit">Оставьте заявку
+                </button>
+
+                <small class="form__small">Приедем в день заказа*</small>
+            </form>
+        </div>
+        <!-- /.popup-caller -->
+    </div>
+    <!-- /.popup-content popup-calculator-content -->
+</div>
+<!-- /#popup-calculator.popup popup-calculator -->
+<!-- END CALCULATOR /.popup-payment -->
+
+<!-- RESULT -->
+
+
+<div class="popup popup-result" id="popup-result">
+    <div class="popup-content popup-result-content">
+        <button class="popup-content__close">&times;</button>
+
+        <div class="popup-result-slider">
+            <div class="popup-result-block">
+                <h3 class="popup-result-block__title">Результаты</h3>
+
+                <p class="popup-result-block__descr">Киев, под шпаклевку,
+                    неровность 40 мм.
+                </p>
+
+                <span class="popup-result-block__cost">Стоимость работ <br> <strong>- 330</strong> грн/м<sup>2</sup></span>
+
+                <ul class="popup-result-block__list">
+                    <li class="popup-result-block__item">Проведение работ</li>
+                    <li class="popup-result-block__item">Уборка</li>
+                </ul>
+                <!-- /.price-block__list -->
+            </div>
+            <!-- /.price-block popup-result-block -->
+
+            <div class="popup-result-block">
+                <h3 class="popup-result-block__title">Результаты</h3>
+
+                <p class="popup-result-block__descr">Киев, под шпаклевку,
+                    неровность 40 мм.
+                </p>
+
+                <span class="popup-result-block__cost">Стоимость работ <br> <strong>- 530</strong> грн/м<sup>2</sup></span>
+
+                <ul class="popup-result-block__list">
+                    <li class="popup-result-block__item">Завоз материала и его подъём</li>
+                    <li class="popup-result-block__item">Проведение работ</li>
+                    <li class="popup-result-block__item">Уборка</li>
+                    <li class="popup-result-block__item">Гарантия 2 года</li>
+                </ul>
+                <!-- /.price-block__list -->
+            </div>
+            <!-- /.popup-result-slider-->
+
+
+        </div>
+        <!-- /.price-block popup-result-block -->
+    </div>
+    <!-- /.popup-content popup-calculator-content -->
+</div>
+
+<!--  /.popup popup-result -->
+
+<!-- END POPUPS -->
+
+<!-- Button Scroll to top -->
+<button class="button button_up">
+    &#9650;
+</button>
+<!-- /Button Scroll to top -->
+
+<!-- Style  -->
+<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+
+<!-- Slick Slider Style -->
+<link rel="stylesheet" href="plugins/slick/slick.css">
+<link rel="stylesheet" href="plugins/slick/slick-theme.css">
+<!-- END Style  -->
+
+<!-- Animate Style -->
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- END Slick Style Slider -->
+
+<!-- Scripts -->
+
+<!-- JQuery -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha256-rsPUGdUPBXgalvIj4YKJrrUlmLXbOb6Cp7cdxn1qeUc=" crossorigin="anonymous"></script>
+
+
+<!-- Mask Inputs -->
+<script src="plugins/jquery.maskedinput.min.js"></script>
+<script src="js/mask.min.js"></script>
+
+<!-- Animate / Wow.js -->
+<script src="plugins/wow.min.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+
+
+<!-- Main Script -->
+<script src="js/lazy-load.min.js"></script>
+<script src="js/modules/scrollToTop.min.js"></script>
+<script src="js/modules/popup.min.js"></script>
+<script src="js/modules/navigation.min.js"></script>
+<script src="js/modules/validation.min.js"></script>
+<script src="js/modules/sendForms.min.js"></script>
+<script src="js/modules/calculator.min.js"></script>
+<script src="js/main.min.js" ></script>
+
+
+<!-- Slick Slider script -->
+<script src="plugins/slick/slick.min.js"></script>
+<script src="js/slider.min.js"></script>
+
+<!-- Fotorama -->
+
+<link rel="stylesheet" href="plugins/fotorama/fotorama.css">
+<script async src="plugins/fotorama/fotorama.js"></script>
+
+<!--
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+-->
+<!-- Google Maps -->
+
+<script src="js/load-map.min.js"></script>
+
+<script src="js/google-maps.min.js"></script>
+
+
+</body>
+</html>
