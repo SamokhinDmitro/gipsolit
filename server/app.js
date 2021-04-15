@@ -11,10 +11,10 @@ const app = express();
 
 let options = {
     host: 'remotemysql.com',
-    user: 'LHQDWIITZo',
+    user: '6rR7bxbdAl',
     port: 3306,
-    password: '4oggbEu2Xb',
-    database: 'LHQDWIITZo'
+    password: 'zMEOeNA5Tf',
+    database: '6rR7bxbdAl'
 };
 
 let connection = mysql.createPool(options);
